@@ -3,58 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Java Projects | Your Name</title>
+  <title>Java Projects | Sangivi Ganesh</title>
+  <!-- Open Graph Meta Tags for social previews -->
+  <meta property="og:title" content="Java Projects | Sangivi Ganesh" />
+  <meta property="og:description" content="A growing portfolio of Java programs and OOP examples by Sangivi Ganesh." />
+  <meta property="og:image" content="/path/to/preview-image.png" />
+  <meta property="og:url" content="https://sangivi-ganesh.github.io/Javacodespace/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
   <style>
+    :root {
+      --primary: #0077b5; /* LinkedIn blue */
+      --bg: #f4f4f4;
+      --text: #333;
+      --card-bg: #fff;
+      --card-shadow: rgba(0, 0, 0, 0.1);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      padding: 2rem;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      padding: 2rem 1rem;
+      background-color: var(--card-bg);
+      box-shadow: 0 1px 4px var(--card-shadow);
     }
-    a {
-      color: #0077b5;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    nav a {
+      color: var(--primary);
       text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      flex: 1;
+      padding: 1rem 0;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.5rem;
     }
     section {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    #projects .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card a {
+      margin-top: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      align-self: flex-start;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--card-bg);
+      box-shadow: 0 -1px 4px var(--card-shadow);
     }
     .link-btns a {
       margin-right: 1rem;
       display: inline-block;
-      background-color: #333;
+      background-color: var(--text);
       color: #fff;
       padding: 0.5rem 1rem;
       border-radius: 5px;
       text-decoration: none;
     }
     .link-btns a:hover {
-      background-color: #0077b5;
+      background-color: var(--primary);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Java Projects by Sangivi Ganesh~</h1>
+    <h1>Java Projects by Sangivi Ganesh</h1>
     <p>Mini repo portfolio — hosted on GitHub</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About</h2>
-    <p>This project is a growing collection of Java programs — from basic logic to real-world OOP examples. Stay tuned for updates every week!</p>
-  </section>
+  <div class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>This project is a growing collection of Java programs — from basic logic to real-world OOP examples. I update weekly with new features and tutorials.</p>
+    </section>
 
-  <section>
-    <h2>Coming Soon 🚧</h2>
-    <p>The Java source files will be added here on Tuesday. Watch this space!</p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <!-- Example project card -->
+        <div class="card">
+          <h3>Calculator App</h3>
+          <p>A simple calculator demonstrating OOP principles and user input handling.</p>
+          <a href="projects/calculator.html" target="_blank">View Code →</a>
+        </div>
+        <!-- Duplicate .card blocks for each project -->
+      </div>
+    </section>
 
-  <section class="link-btns">
-    <a href="https://github.com/Sangivi-Ganesh/Javacodespace" target="_blank">🌐 GitHub</a>
-    <a href="https://www.linkedin.com/in/sangivi-ganesh-v-a1b533350/" target="_blank">🔗 LinkedIn</a>
-  </section>
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>If you have questions, feedback, or internship opportunities, feel free to <a href="mailto:youremail@domain.com">email me</a> or connect on <a href="https://www.linkedin.com/in/sangivi-ganesh-v-a1b533350/" target="_blank">LinkedIn</a>.</p>
+      <div class="link-btns">
+        <a href="https://github.com/Sangivi-Ganesh/Javacodespace" target="_blank">🌐 GitHub</a>
+        <a href="https://sangivi-ganesh.github.io/Javacodespace/" target="_blank">🔗 Live Demo</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Sangivi Ganesh • <a href="mailto:youremail@domain.com">Email Me</a></p>
+  </footer>
 </body>
 </html>
