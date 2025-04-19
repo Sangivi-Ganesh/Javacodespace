@@ -5,6 +5,11 @@ This project contains a collection of basic and useful Java programs.
 It is made to help with learning and practice — from simple syntax to core concepts.  
 All the code here is written and maintained by me during my learning journey. ✨
 
+## Live Demo
+Check out the running site here:  
+🔗 https://sangivi-ganesh.github.io/Javacodespace/
+
+
 ## 📌 What's Included
 
 - 🔤 Basic programs (Hello World, Loops, Conditions)
